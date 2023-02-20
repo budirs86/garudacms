@@ -6,6 +6,7 @@ use App\Models\Berita;
 use App\Models\Pengumuman;
 use App\Models\Pages;
 use App\Models\Aplikasi;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
   
 class HomeController extends Controller
@@ -32,10 +33,13 @@ class HomeController extends Controller
         $halaman = Pages::where('unit_id', $unit)->count();
         $pengumuman = Pengumuman::where('unit_id', $unit)->count();
         $aplikasi = Aplikasi::where('unit_id', $unit)->count();
+        $pengguna = User::where('unit_id', $unit)->count();
+        $kategory = User::where('unit_id', $unit)->count();
+        
         $news = Berita::where('unit_id', $unit)
         ->with('category')
         ->orderBy('id', 'DESC')
         ->offset(0)->limit(10)->get();
-        return view('dashboard', compact('unit', 'berita', 'halaman', 'pengumuman', 'aplikasi', 'news'));
+        return view('dashboard', compact('unit', 'berita', 'halaman', 'pengumuman', 'aplikasi', 'news', 'pengguna', 'kategory'));
     }   
 }

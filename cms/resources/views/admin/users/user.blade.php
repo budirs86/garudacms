@@ -61,7 +61,7 @@
                 <th>Username</th>
                 <th>Nama</th>
                 <th>Tipe</th>
-                <th>Domain</th>
+
                 <th width="100">Action</th>
               </tr>
               </thead>
@@ -75,7 +75,7 @@
                   <td>{{ $user->email }}</td>
                   <td>{{ $user->name }}</td>
                   <td>{{ $user->type }}</td>
-                  <td>{{ $user->units->unit_kerja }}</td>
+          
                   <td>
                     <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('users_delete', $user->id) }}" method="POST">
                       <a href="{{ route('users_edit', $user->id) }}" class="btn btn-sm btn-primary">Edit</a>

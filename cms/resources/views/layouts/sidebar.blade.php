@@ -1,9 +1,9 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-light-primary elevation-4">
+<aside class="main-sidebar sidebar-light-danger elevation-4 sidebar-light-purple">
     <!-- Brand Logo -->
     <a href="{{ url('dashboard')}}" class="brand-link bg-primary">
       <img src={{ asset('assets/logo/cms_logo.png')}} alt="CMS Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Egov-CMS</span>
+      <span class="brand-text font-weight-light">Garuda CMS</span>
     </a>
 
     <!-- Sidebar -->
@@ -43,53 +43,14 @@
                 </p>
               </a>
               <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{{ url('admin/unit_kerja') }}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Unit/Subdomain</p>
-                  </a>
-                </li>
+             
                 <li class="nav-item">
                   <a href="{{ url('admin/users') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>User Management</p>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Menu Frontpage</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Sub Menu Frontpage</p>
-                  </a>
-                </li>
-
               </ul>
-            </li>
-            
-           <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="fa fa-newspaper"></i>
-              <p>
-                Berita
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ url('admin/list_berita') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Daftar Berita</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          
             </ul>
           </li>
          

@@ -14,7 +14,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src={{ asset('assets/logo/cms_logo.png') }} alt="E-Gov CMS Logo" width="60">
+    <img class="animation__shake" src={{ asset('assets/logo/cms_logo.png') }} alt="Garuda CMS Logo" width="60">
   </div>
 
   <!-- Navbar -->
@@ -29,7 +29,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <label>{{ Str::upper(Auth::user()->units->unit_kerja) }}</label>
+        
       </li>
     </ul>
   </nav>
@@ -61,7 +61,7 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
             <div class="d-flex col-12">
-              <img src={{ asset("assets/logo/logo_baubau_small.png")}} width="150" class="center">
+              <img src={{ asset("assets/logo/cms_logo.png")}} width="150" class="center">
             </div>
         </div>
         <br>
@@ -72,7 +72,7 @@
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>{{ $berita }}</h3>
-                <p>Berita/Artikel</p>
+                <p>Artikel</p>
               </div>
               <div class="icon">
                 <i class="fa fa-newspaper"></i>
@@ -87,7 +87,7 @@
               <div class="inner">
                 <h3>{{ $halaman }}</h3>
 
-                <p>Halaman</p>
+                <p>Pages</p>
               </div>
               <div class="icon">
                 <i class="fa fa-globe"></i>
@@ -95,37 +95,37 @@
               <a href="{{ route('halaman') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>{{ $pengumuman }}</h3>
-
-                <p>Pengumuman</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-bullhorn"></i>
-              </div>
-              <a href="{{ route('pengumuman') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+          
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>{{ $aplikasi }}</h3>
+                <h3>{{ $pengguna }}</h3>
 
-                <p>Aplikasi</p>
+                <p>User</p>
               </div>
               <div class="icon">
                 <i class="fa fa-file"></i>
               </div>
-              <a href="{{ route('aplikasi') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="{{ route('users') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-primary">
+              <div class="inner">
+                <h3>{{ $kategory }}</h3>
+
+                <p>Category</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-file"></i>
+              </div>
+              <a href="{{ route('category') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
         </div>
         <!-- /.row -->
        <!-- Main content -->

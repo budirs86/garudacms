@@ -1,9 +1,9 @@
 <!-- jQuery -->
 <footer class="main-footer">
-  <strong>Copyright &copy; 2018-2022 <a href="https://budisetiawan.net">E-Government CMS</a>.</strong>
+  <strong>Copyright &copy; 2018-2023 <a href="https://budisetiawan.net">Garuda CMS</a>.</strong>
   All rights reserved.
   <div class="float-right d-none d-sm-inline-block">
-    <b>Version</b> 2.0.0
+    <b>Version</b> 1.0.0
   </div>
 </footer>
 

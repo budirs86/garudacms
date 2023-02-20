@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-@include('layouts.header')
+<!-- @include('layouts.header') -->
 <style>
   img {
     display: block;
@@ -9,7 +9,7 @@
     margin-right: auto;
   }
   </style>
-<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<body class="sidebar-mini layout-fixed control-sidebar-slide-open accent-purple layout-footer-fixed text-sm" style="height: auto;">
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -18,7 +18,7 @@
   </div>
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-primary navbar-dark bg-primary">
+  <nav class="main-header navbar navbar-expand navbar-light bg-purple text-sm">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -137,9 +137,7 @@
   </div>
   <!-- /.content-wrapper -->
   <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
+
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->

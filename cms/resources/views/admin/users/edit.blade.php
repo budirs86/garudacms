@@ -71,21 +71,7 @@
                 {{ csrf_field() }}
                 <input name="id" type="hidden" value="{{ $user->id }}">
                 <div class="card-body">
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Unit Kerja</label>
-                    <div class="col-sm-10">
-                      <div class="col-sm-9">
-                        <select class="form-control select2" style="width: 100%;" name="unit_id" id="select1">
-                          <option selected value="0">Pilih Unit Kerja</option>
-                          @foreach ($unit as $item)
-                              <option value="{{ $item->id}}" @if (($user->unit_id) === $item->id)
-                                selected                                  
-                              @endif>{{ $item->unit_kerja}}</option>
-                          @endforeach
-                        </select>  
-                       </div>
-                    </div>
-                  </div>
+                
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                     <div class="col-sm-10">
@@ -107,7 +93,6 @@
                     <div class="col-sm-10">
                       <div class="col-sm-9">
                       <select class="form-control select2" style="width: 100%;" name="tipe_id" id="select2">
-                          <option value="0" @if (($user->type) === 'user' ) selected @endif> User </option>
                           <option value="1" @if (($user->type) === 'admin' ) selected @endif> Admin </option>
                           <option value="2" @if (($user->type) === 'manager' ) selected @endif> Manager </option>
                       </select>

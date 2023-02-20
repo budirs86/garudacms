@@ -70,19 +70,7 @@
               <form class="form-horizontal" action="{{ route('users_store') }}" method="POST">
                 {{ csrf_field() }}
                 <div class="card-body">
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Unit Kerja</label>
-                    <div class="col-sm-10">
-                      <div class="col-sm-9">
-                        <select class="form-control select2" style="width: 100%;" name="unit_id" id="select1">
-                          <option selected value="0">Pilih Unit Kerja</option>
-                          @foreach ($unit as $item)
-                              <option value="{{ $item->id}}">{{ $item->unit_kerja}}</option>
-                          @endforeach
-                        </select>  
-                       </div>
-                    </div>
-                  </div>
+         
                   <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                     <div class="col-sm-10">
@@ -112,7 +100,6 @@
                     <div class="col-sm-10">
                       <div class="col-sm-9">
                       <select class="form-control select2" style="width: 100%;" name="tipe_id" id="select2">
-                          <option value="0" selected> User </option>
                           <option value="1"> Admin </option>
                           <option value="2"> Manager </option>
                       </select>

@@ -74,7 +74,7 @@ class UserController extends Controller
                 'name' => $request['name'],
                 'email' => $request['email'],
                 'password' => Hash::make($request['password']),
-                'unit_id' => $request['unit_id'],
+                'unit_id' => 1,
                 'type' => $request['tipe_id']
             ]);
             return redirect()->route('users')->with(['success' => 'Data Berhasil Disimpan!']);
@@ -119,7 +119,7 @@ class UserController extends Controller
             User::where('id', $request->id)->update([
                 'name' => $request['name'],
                 'email' => $request['email'],
-                'unit_id' => $request['unit_id'],
+                'unit_id' => 1,
                 'type' => $request['tipe_id'],
               
             ]);

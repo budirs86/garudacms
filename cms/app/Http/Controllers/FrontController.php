@@ -85,6 +85,8 @@ class FrontController extends Controller
         ->orderBy('id', 'DESC')
         ->get();
 
+        $logo = Logo::where('unit_id', $unit)->get();
+
          //statistik
          $postsViews= new BeritaViews();
          $postsViews->id_post = 0;
@@ -95,7 +97,7 @@ class FrontController extends Controller
          $postsViews->agent = $_SERVER['HTTP_USER_AGENT'];
          $postsViews->save();
         
-         return view('tema.'.$theme.'.home', compact('gallery', 'menu', 'unit', 'pimpinan', 'top_news', 'top_news_skpd', 'top_news_5', 'top_pengumuman_5', 'top_opd', 'top_aplikasi','top_link', 'info'));
+         return view('tema.'.$theme.'.home', compact('gallery', 'menu', 'unit', 'pimpinan', 'top_news', 'top_news_skpd', 'top_news_5', 'top_pengumuman_5', 'top_opd', 'top_aplikasi','top_link', 'info', 'logo'));
         
         // return view('tema.'.$theme.'.home', compact('gallery', $gallery, 'menu', $menu, 'unit', $unit, 'pimpinan', $pimpinan, 'top_news', $top_news, 'top_news_skpd', $top_news_skpd, 'top_news_5', $top_news_5, 'top_pengumuman_5', $top_pengumuman_5, 'top_opd', $top_opd, 'top_aplikasi', $top_aplikasi, 'top_link', $top_link));
     }
